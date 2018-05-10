@@ -15,7 +15,7 @@
             {
                 string[] sqlParams = {"@MaHV","@HoTen","@NgaySinh","@GioiTinh", "@DiaChi", "@SoDienThoai"};
                 Object[] parameters = { maHV, hoTen, ngaySinh, gioiTinh, diaChi, soDienThoai };
-                DataProvider.Instance.ExecuteNonQuery("ThemHocVien", sqlParams, parameters);
+                DataProvider.Instance.ExecuteNonQuery("EXEC ThemHocVien @MaHV,@HoTen,@NgaySinh,@GioiTinh, @DiaChi, @SoDienThoai", sqlParams, parameters);
                 return true;
             }
             catch
@@ -29,7 +29,7 @@
             {
                 string[] sqlParams = { "@MaHV","@HoTen","@NgaySinh", "@GioiTinh", "@DiaChi","@SoDienThoai" };
                 Object[] parameters = { maHV, hoTen, ngaySinh, gioiTinh, diaChi, soDienThoai };
-                DataProvider.Instance.ExecuteNonQuery("CapNhatHocVien", sqlParams, parameters);
+                DataProvider.Instance.ExecuteNonQuery("EXEC CapNhatHocVien @MaHV,@HoTen,@NgaySinh, @GioiTinh, @DiaChi,@SoDienThoai", sqlParams, parameters);
                 return true;
             }
             catch
@@ -43,7 +43,7 @@
             {
                 string[] sqlParams = { "@MaHV" };
                 Object[] parameters = { maHV };
-                DataProvider.Instance.ExecuteNonQuery("XoaHocVien", sqlParams, parameters);
+                DataProvider.Instance.ExecuteNonQuery("EXEC XoaHocVien @MaHV", sqlParams, parameters);
                 return true;
             }
             catch

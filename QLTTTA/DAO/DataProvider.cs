@@ -63,7 +63,7 @@ namespace QLTTTA.DAO
                 if (parameters != null)
                 {
                     int i = 0;
-                    command.CommandType = CommandType.StoredProcedure;
+                    //command.CommandType = CommandType.StoredProcedure;
                     foreach (object parameter in parameters)
                     {
                         command.Parameters.Add(sqlParameters[i++]).Value = parameter;

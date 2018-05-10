@@ -25,7 +25,7 @@ namespace QLTTTA.DAO
             {
                 string[] sqlParams = { "@MaKH","@NgayBatDau","@SoTuanHoc","@TinhTrang" };
                 Object[] parameters = { maKH, ngayBatDau, soTuanHoc, tinhTrang };
-                DataProvider.Instance.ExecuteNonQuery("ThemKhoaHoc", sqlParams, parameters);
+                DataProvider.Instance.ExecuteNonQuery("EXEC ThemKhoaHoc @MaKH, @NgayBatDau, @SoTuanHoc, @TinhTrang", sqlParams, parameters);
                 return true;
             }
             catch
@@ -37,12 +37,9 @@ namespace QLTTTA.DAO
         {
             try
             {
-                SqlParameter[] sqlParams = { new SqlParameter("@MaKH", SqlDbType.Int),
-                new SqlParameter("@NgayBatDau", SqlDbType.Date),
-                new SqlParameter("@SoTuanHoc", SqlDbType. Int),
-                new SqlParameter("@TinhTrang", SqlDbType.VarChar) };
+                string[] sqlParams = {"@MaKH","@NgayBatDau", "@SoTuanHoc","@TinhTrang" };
                 Object[] parameters = { maKH, ngayBatDau, soTuanHoc, tinhTrang };
-                DataProvider.Instance.ExecuteNonQuery("CapNhatKhoaHoc", sqlParams, parameters);
+                DataProvider.Instance.ExecuteNonQuery("EXEC CapNhatKhoaHoc @MaKH, @NgayBatDau, @SoTuanHoc, @TinhTrang", sqlParams, parameters);
                 return true;
             }
             catch
@@ -54,9 +51,9 @@ namespace QLTTTA.DAO
         {
             try
             {
-                SqlParameter[] sqlParams = { new SqlParameter("@MaKH", OracleDbType.Int32) };
+                string[] sqlParams = { "@MaKH" };
                 Object[] parameters = { maKH };
-                DataProvider.Instance.ExecuteNonQuery("XoaKhoaHoc", sqlParams, parameters);
+                DataProvider.Instance.ExecuteNonQuery("EXEC XoaKhoaHoc @MaKH", sqlParams, parameters);
                 return true;
             }
             catch

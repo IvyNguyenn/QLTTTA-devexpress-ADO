@@ -24,15 +24,9 @@ namespace QLTTTA.DAO
         {
             try
             {
-                SqlParameter[] sqlParams = { new SqlParameter("@MaNV", SqlDbType.Int),
-                new SqlParameter("@TenNV", SqlDbType.VarChar),
-                new SqlParameter("@NgaySinh", SqlDbType. Date),
-                new SqlParameter("@GioiTinh", SqlDbType.VarChar),
-                new SqlParameter("@CMND", SqlDbType.VarChar),
-                new SqlParameter("@Luong", SqlDbType.Int),
-                new SqlParameter("@Mail", SqlDbType.VarChar)};
+                string[] sqlParams = {"@MaNV","@TenNV", "@NgaySinh", "@GioiTinh", "@CMND", "@Luong", "@Mail"};
                 Object[] parameters = { maNV, tenNV, ngaySinh, gioiTinh, cmnd, luong, mail };
-                DataProvider.Instance.ExecuteNonQuery("ThemNhanVien", sqlParams, parameters);
+                DataProvider.Instance.ExecuteNonQuery("EXEC ThemNhanVien @MaNV,@TenNV, @NgaySinh, @GioiTinh, @CMND, @Luong, @Mail", sqlParams, parameters);
                 return true;
 
             }
@@ -45,15 +39,9 @@ namespace QLTTTA.DAO
         {
             try
             {
-                SqlParameter[] sqlParams = { new SqlParameter("@MaNV", SqlDbType.Int),
-                new SqlParameter("@TenNV", SqlDbType.VarChar),
-                new SqlParameter("@NgaySinh", SqlDbType. Date),
-                new SqlParameter("@GioiTinh", SqlDbType.VarChar),
-                new SqlParameter("@CMND", SqlDbType.VarChar),
-                new SqlParameter("@Luong", SqlDbType.Int),
-                new SqlParameter("@Mail", SqlDbType.VarChar)};
+                string[] sqlParams = {"@MaNV", "@TenNV","@NgaySinh", "@GioiTinh", "@CMND", "@Luong", "@Mail"};
                 Object[] parameters = { maNV, tenNV, ngaySinh, gioiTinh, cmnd, luong, mail };
-                DataProvider.Instance.ExecuteNonQuery("CapNhatNhanVien", sqlParams, parameters);
+                DataProvider.Instance.ExecuteNonQuery("EXEC CapNhatNhanVien @MaNV, @TenNV,@NgaySinh, @GioiTinh, @CMND, @Luong, @Mail", sqlParams, parameters);
                 return true;
 
             }
@@ -66,9 +54,9 @@ namespace QLTTTA.DAO
         {
             try
             {
-                SqlParameter[] sqlParams = { new SqlParameter("@MaNV", SqlDbType.Int) };
+                string[] sqlParams = { "@MaNV" };
                 Object[] parameters = { maNV };
-                DataProvider.Instance.ExecuteNonQuery("XoaNhanVien", sqlParams, parameters);
+                DataProvider.Instance.ExecuteNonQuery("EXEC XoaNhanVien @MaNV", sqlParams, parameters);
                 return true;
             }
             catch

@@ -13,16 +13,9 @@
         {
             try
             {
-                SqlParameter[] sqlParams = { new SqlParameter("@MaLH", SqlDbType.Int),
-                new SqlParameter("@KhoaHoc", SqlDbType.Int),
-                new SqlParameter("@MonHoc", SqlDbType.Int),
-                new SqlParameter("@GiangVien", SqlDbType.Int),
-                new SqlParameter("@CaHoc", SqlDbType.VarChar),
-                new SqlParameter("@NgayHoc", SqlDbType.VarChar),
-                new SqlParameter("@SoLuongHV", SqlDbType.VarChar),
-                new SqlParameter("@SoTien", SqlDbType.Int)};
+                string[] sqlParams = { "@MaLH","@KhoaHoc", "@MonHoc","@GiangVien", "@CaHoc","@NgayHoc", "@SoLuongHV","@SoTien"};
                 Object[] parameters = { maLH, khoaHoc, monHoc, giangVien, caHoc, ngayHoc, soLuongHV, soTien };
-                DataProvider.Instance.ExecuteNonQuery("Themlophoc", sqlParams, parameters);
+                DataProvider.Instance.ExecuteNonQuery("EXEC Themlophoc @MaLH, @KhoaHoc, @MonHoc, @GiangVien, @CaHoc, @NgayHoc, @SoLuongHV, @SoTien", sqlParams, parameters);
                 return true;
             }
             catch
@@ -34,16 +27,9 @@
         {
             try
             {
-                SqlParameter[] sqlParams = { new SqlParameter("@MaLH", SqlDbType.Int),
-                new SqlParameter("@KhoaHoc", SqlDbType.Int),
-                new SqlParameter("@MonHoc", SqlDbType.Int),
-                new SqlParameter("@GiangVien", SqlDbType.Int),
-                new SqlParameter("@CaHoc", SqlDbType.VarChar),
-                new SqlParameter("@NgayHoc", SqlDbType.VarChar),
-                new SqlParameter("@SoLuongHV", SqlDbType.VarChar),
-                new SqlParameter("@SoTien", SqlDbType.Int)};
+                string[] sqlParams = {"@MaLH", "@KhoaHoc", "@MonHoc", "@GiangVien", "@CaHoc","@NgayHoc", "@SoLuongHV","@SoTien"};
                 Object[] parameters = { maLH, khoaHoc, monHoc, giangVien, caHoc, ngayHoc, soLuongHV, soTien };
-                DataProvider.Instance.ExecuteNonQuery("CapNhatLopHoc", sqlParams, parameters);
+                DataProvider.Instance.ExecuteNonQuery("EXEC CapNhatLopHoc @MaLH, @KhoaHoc, @MonHoc, @GiangVien, @CaHoc,@NgayHoc, @SoLuongHV,@SoTien", sqlParams, parameters);
                 return true;
             }
             catch
@@ -55,9 +41,9 @@
         {
             try
             {
-                SqlParameter[] sqlParams = { new SqlParameter("@MaLH", SqlDbType.Int),                   new SqlParameter("@KhoaHoc", SqlDbType.Int)};
+                string[] sqlParams = { "@MaLH","@KhoaHoc"};
                 Object[] parameters = { maLH, khoaHoc };
-                DataProvider.Instance.ExecuteNonQuery("XoaLopHoc", sqlParams, parameters);
+                DataProvider.Instance.ExecuteNonQuery("EXEC XoaLopHoc @MaLH, @KhoaHoc", sqlParams, parameters);
                 return true;
             }
             catch

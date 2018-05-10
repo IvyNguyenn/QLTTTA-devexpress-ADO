@@ -25,7 +25,7 @@ namespace QLTTTA.DAO
             {
                 string[] sqlParams = { "@MaGV","@TenGV","@NgaySinh","@ThamNien","@HocVi","@Luong","@Mail"};
                 Object[] parameters = { maGV, tenGV, ngaySinh, thamNien, hocVi, luong, mail };
-                DataProvider.Instance.ExecuteNonQuery("ThemGiangVien", sqlParams, parameters);
+                DataProvider.Instance.ExecuteNonQuery("EXEC ThemGiangVien @MaGV, @TenGV, @NgaySinh, @ThamNien, @HocVi, @Luong, @Mail", sqlParams, parameters);
                 return true;
             }
 
@@ -40,7 +40,7 @@ namespace QLTTTA.DAO
             {
                 string[] sqlParams = { "@MaGV","@TenGV", "@NgaySinh","@ThamNien", "@HocVi", "@Luong", "@Mail"};
                 Object[] parameters = { maGV, tenGV, ngaySinh, thamNien, hocVi, luong, mail };
-                DataProvider.Instance.ExecuteNonQuery("CapNhatGiangVien", sqlParams, parameters);
+                DataProvider.Instance.ExecuteNonQuery("EXEC CapNhatGiangVien @MaGV,@TenGV, @NgaySinh,@ThamNien, @HocVi, @Luong, @Mail", sqlParams, parameters);
                 return true;
 
             }
@@ -55,7 +55,7 @@ namespace QLTTTA.DAO
             {
                 string[] sqlParams = { "@MaGV" };
                 Object[] parameters = { maGV };
-                DataProvider.Instance.ExecuteNonQuery("XoaGiangVien", sqlParams, parameters);
+                DataProvider.Instance.ExecuteNonQuery("EXEC XoaGiangVien @MaGV", sqlParams, parameters);
                 return true;
             }
             catch
