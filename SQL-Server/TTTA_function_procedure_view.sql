@@ -1,23 +1,23 @@
 
 USE TTTA_DB
--- LoadData
+-- LoadData ---------------------------------------------------------------
 CREATE View LoadKhoaHoc As SELECT * From KhoaHoc
 
-CREATE View LoadMonHoc As Select *    From MonHoc;
+CREATE View LoadMonHoc As Select * From MonHoc;
 
-CREATE View LoadGiangVien As Select *    From GiangVien;
+CREATE View LoadGiangVien As Select *  From GiangVien;
 
-Create View LoadNhanVien As Select *    From NhanVien;
+Create View LoadNhanVien As Select *  From NhanVien;
 
-Create View LoadDangNhap As Select *    From DangNhap;
+Create View LoadDangNhap As Select * From DangNhap;
 
 Create View LoadLopHoc As Select * From LopHoc;
 
-Create  View LoadHocVien As Select *    From HocVien;
+Create  View LoadHocVien As Select * From HocVien;
 
-Create View LoadBienLaiHocPhi As Select *    From BienLaiHocPhi;
+Create View LoadBienLaiHocPhi As Select * FROM BienLaiHocPhi;
 
-Create View LoadKetQua As Select *    From KetQua;
+Create View LoadKetQua As Select * From KetQua;
 -- Procedures
 -- THEM
 -- KHOAHOC------------------------------------------------------------------
@@ -219,7 +219,7 @@ Begin
   Where MaHV=@MaHV;
 End 
 -- DANGNHAP-------------------------------------------------------------------------------
-ALTER Procedure XoaDangNhap(@Mail varchar(30), @MatKhau  varchar(30),@QuyenDangNhap  varchar(20))
+ALTER Procedure XoaDangNhap(@Mail varchar(30))
 As
 Begin
   Delete
@@ -335,7 +335,7 @@ DECLARE
   AND MaKhoaHoc=@MaKhoaHoc
 End
 
---FUNCTION
+--FUNCTION ------------------------------------------------------
 CREATE FUNCTION NhanVienNu(@MaNV int)
 RETURNS varchar AS
 Begin
