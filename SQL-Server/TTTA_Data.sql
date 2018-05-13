@@ -337,6 +337,7 @@ SELECT * FROM BienLaiHocPhi
 SELECT * FROM DangNhap
 SELECT * FROM GiangVien
 SELECT * FROM HocVien
+
 SELECT * FROM KetQua
 SELECT * FROM KhoaHoc
 SELECT * FROM LopHoc
