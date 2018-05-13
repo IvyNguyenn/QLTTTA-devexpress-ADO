@@ -171,7 +171,7 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
             this.barDockControlTop.Size = new System.Drawing.Size(647, 50);
             // 
             // barDockControlBottom
@@ -180,7 +180,7 @@
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 433);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
             this.barDockControlBottom.Size = new System.Drawing.Size(647, 0);
             // 
             // barDockControlLeft
@@ -189,7 +189,7 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 50);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
             this.barDockControlLeft.Size = new System.Drawing.Size(0, 383);
             // 
             // barDockControlRight
@@ -198,7 +198,7 @@
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(647, 50);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 383);
             // 
             // layoutControl1
@@ -212,7 +212,7 @@
             this.layoutControl1.Controls.Add(this.edtMaGV);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.layoutControl1.Location = new System.Drawing.Point(0, 50);
-            this.layoutControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.layoutControl1.Margin = new System.Windows.Forms.Padding(4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(766, 41, 450, 400);
             this.layoutControl1.Root = this.layoutControlGroup1;
@@ -224,7 +224,7 @@
             // 
             this.edtLuong.Enabled = false;
             this.edtLuong.Location = new System.Drawing.Point(441, 103);
-            this.edtLuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.edtLuong.Margin = new System.Windows.Forms.Padding(4);
             this.edtLuong.MenuManager = this.barManager1;
             this.edtLuong.Name = "edtLuong";
             this.edtLuong.Size = new System.Drawing.Size(190, 22);
@@ -235,7 +235,7 @@
             // 
             this.cbbHocVi.Enabled = false;
             this.cbbHocVi.Location = new System.Drawing.Point(119, 103);
-            this.cbbHocVi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbHocVi.Margin = new System.Windows.Forms.Padding(4);
             this.cbbHocVi.MenuManager = this.barManager1;
             this.cbbHocVi.Name = "cbbHocVi";
             this.cbbHocVi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -253,7 +253,7 @@
             // 
             this.cbbMail.Enabled = false;
             this.cbbMail.Location = new System.Drawing.Point(119, 75);
-            this.cbbMail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbMail.Margin = new System.Windows.Forms.Padding(4);
             this.cbbMail.MenuManager = this.barManager1;
             this.cbbMail.Name = "cbbMail";
             this.cbbMail.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -267,7 +267,7 @@
             // 
             this.nmrThamNien.Enabled = false;
             this.nmrThamNien.Location = new System.Drawing.Point(442, 44);
-            this.nmrThamNien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nmrThamNien.Margin = new System.Windows.Forms.Padding(4);
             this.nmrThamNien.Name = "nmrThamNien";
             this.nmrThamNien.Size = new System.Drawing.Size(189, 22);
             this.nmrThamNien.TabIndex = 9;
@@ -277,7 +277,7 @@
             this.dateEdtNgaySinh.EditValue = null;
             this.dateEdtNgaySinh.Enabled = false;
             this.dateEdtNgaySinh.Location = new System.Drawing.Point(119, 44);
-            this.dateEdtNgaySinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateEdtNgaySinh.Margin = new System.Windows.Forms.Padding(4);
             this.dateEdtNgaySinh.MenuManager = this.barManager1;
             this.dateEdtNgaySinh.Name = "dateEdtNgaySinh";
             this.dateEdtNgaySinh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -293,7 +293,7 @@
             // 
             this.edtHoTen.Enabled = false;
             this.edtHoTen.Location = new System.Drawing.Point(441, 16);
-            this.edtHoTen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.edtHoTen.Margin = new System.Windows.Forms.Padding(4);
             this.edtHoTen.MenuManager = this.barManager1;
             this.edtHoTen.Name = "edtHoTen";
             this.edtHoTen.Size = new System.Drawing.Size(190, 22);
@@ -304,7 +304,7 @@
             // 
             this.edtMaGV.Enabled = false;
             this.edtMaGV.Location = new System.Drawing.Point(119, 16);
-            this.edtMaGV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.edtMaGV.Margin = new System.Windows.Forms.Padding(4);
             this.edtMaGV.MenuManager = this.barManager1;
             this.edtMaGV.Name = "edtMaGV";
             this.edtMaGV.Size = new System.Drawing.Size(213, 22);
@@ -394,10 +394,10 @@
             // gcGiangVien
             // 
             this.gcGiangVien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcGiangVien.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gcGiangVien.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
             this.gcGiangVien.Location = new System.Drawing.Point(0, 198);
             this.gcGiangVien.MainView = this.gridView1;
-            this.gcGiangVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gcGiangVien.Margin = new System.Windows.Forms.Padding(4);
             this.gcGiangVien.MenuManager = this.barManager1;
             this.gcGiangVien.Name = "gcGiangVien";
             this.gcGiangVien.Size = new System.Drawing.Size(647, 235);
@@ -507,7 +507,7 @@
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDSGiangVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh sách giảng viên";

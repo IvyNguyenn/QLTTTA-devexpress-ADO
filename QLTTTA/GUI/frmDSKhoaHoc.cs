@@ -102,7 +102,8 @@ namespace QLTTTA.GUI
       }
       private void btnLammoiKH_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
       {
-         MessageBox.Show("hello");
+            //MessageBox.Show("hello");
+            loadData();
       }
 
       private void frmDSKhoaHoc_Load(object sender, EventArgs e)

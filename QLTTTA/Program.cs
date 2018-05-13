@@ -24,8 +24,7 @@ namespace QLTTTA
          BonusSkins.Register();
          SkinManager.EnableFormSkins();
          Application.Run(new frmLogin());
-         
-         
+
 
         }
    }

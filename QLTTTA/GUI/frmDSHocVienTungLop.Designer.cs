@@ -132,6 +132,7 @@
             this.btnLammoiHV.Id = 4;
             this.btnLammoiHV.ImageOptions.Image = global::QLTTTA.Properties.Resources.refresh;
             this.btnLammoiHV.Name = "btnLammoiHV";
+            this.btnLammoiHV.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLammoiHV_ItemClick);
             // 
             // barDockControlTop
             // 
@@ -139,7 +140,7 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
             this.barDockControlTop.Size = new System.Drawing.Size(647, 50);
             // 
             // barDockControlBottom
@@ -148,7 +149,7 @@
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 433);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
             this.barDockControlBottom.Size = new System.Drawing.Size(647, 0);
             // 
             // barDockControlLeft
@@ -157,7 +158,7 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 50);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
             this.barDockControlLeft.Size = new System.Drawing.Size(0, 383);
             // 
             // barDockControlRight
@@ -166,7 +167,7 @@
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(647, 50);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 383);
             // 
             // btnThemHV
@@ -206,7 +207,7 @@
             this.layoutControl1.Controls.Add(this.edtGioiTinh);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.layoutControl1.Location = new System.Drawing.Point(0, 104);
-            this.layoutControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.layoutControl1.Margin = new System.Windows.Forms.Padding(4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(766, 41, 450, 400);
             this.layoutControl1.Root = this.layoutControlGroup1;
@@ -218,7 +219,7 @@
             // 
             this.dateEdtNgaySinh.EditValue = null;
             this.dateEdtNgaySinh.Location = new System.Drawing.Point(408, 100);
-            this.dateEdtNgaySinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateEdtNgaySinh.Margin = new System.Windows.Forms.Padding(4);
             this.dateEdtNgaySinh.MenuManager = this.barManager1;
             this.dateEdtNgaySinh.Name = "dateEdtNgaySinh";
             this.dateEdtNgaySinh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -234,7 +235,7 @@
             // edtDiaChi
             // 
             this.edtDiaChi.Location = new System.Drawing.Point(98, 72);
-            this.edtDiaChi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.edtDiaChi.Margin = new System.Windows.Forms.Padding(4);
             this.edtDiaChi.MenuManager = this.barManager1;
             this.edtDiaChi.Name = "edtDiaChi";
             this.edtDiaChi.Properties.ReadOnly = true;
@@ -245,7 +246,7 @@
             // edtHoTen
             // 
             this.edtHoTen.Location = new System.Drawing.Point(98, 44);
-            this.edtHoTen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.edtHoTen.Margin = new System.Windows.Forms.Padding(4);
             this.edtHoTen.MenuManager = this.barManager1;
             this.edtHoTen.Name = "edtHoTen";
             this.edtHoTen.Properties.ReadOnly = true;
@@ -256,7 +257,7 @@
             // edtSoDT
             // 
             this.edtSoDT.Location = new System.Drawing.Point(98, 100);
-            this.edtSoDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.edtSoDT.Margin = new System.Windows.Forms.Padding(4);
             this.edtSoDT.MenuManager = this.barManager1;
             this.edtSoDT.Name = "edtSoDT";
             this.edtSoDT.Properties.ReadOnly = true;
@@ -267,7 +268,7 @@
             // edtMaHV
             // 
             this.edtMaHV.Location = new System.Drawing.Point(98, 16);
-            this.edtMaHV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.edtMaHV.Margin = new System.Windows.Forms.Padding(4);
             this.edtMaHV.MenuManager = this.barManager1;
             this.edtMaHV.Name = "edtMaHV";
             this.edtMaHV.Properties.ReadOnly = true;
@@ -278,7 +279,7 @@
             // edtGioiTinh
             // 
             this.edtGioiTinh.Location = new System.Drawing.Point(408, 72);
-            this.edtGioiTinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.edtGioiTinh.Margin = new System.Windows.Forms.Padding(4);
             this.edtGioiTinh.MenuManager = this.barManager1;
             this.edtGioiTinh.Name = "edtGioiTinh";
             this.edtGioiTinh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -364,10 +365,10 @@
             // gcHocVien
             // 
             this.gcHocVien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcHocVien.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gcHocVien.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
             this.gcHocVien.Location = new System.Drawing.Point(0, 252);
             this.gcHocVien.MainView = this.gridView1;
-            this.gcHocVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gcHocVien.Margin = new System.Windows.Forms.Padding(4);
             this.gcHocVien.MenuManager = this.barManager1;
             this.gcHocVien.Name = "gcHocVien";
             this.gcHocVien.Size = new System.Drawing.Size(647, 181);
@@ -455,7 +456,7 @@
             this.layoutControl2.Controls.Add(this.cbbKhoaHoc);
             this.layoutControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.layoutControl2.Location = new System.Drawing.Point(0, 50);
-            this.layoutControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.layoutControl2.Margin = new System.Windows.Forms.Padding(4);
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.Root = this.layoutControlGroup2;
             this.layoutControl2.Size = new System.Drawing.Size(647, 54);
@@ -465,7 +466,7 @@
             // cbbLopHoc
             // 
             this.cbbLopHoc.Location = new System.Drawing.Point(409, 16);
-            this.cbbLopHoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbLopHoc.Margin = new System.Windows.Forms.Padding(4);
             this.cbbLopHoc.MenuManager = this.barManager1;
             this.cbbLopHoc.Name = "cbbLopHoc";
             this.cbbLopHoc.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -480,7 +481,7 @@
             // cbbKhoaHoc
             // 
             this.cbbKhoaHoc.Location = new System.Drawing.Point(99, 16);
-            this.cbbKhoaHoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbKhoaHoc.Margin = new System.Windows.Forms.Padding(4);
             this.cbbKhoaHoc.MenuManager = this.barManager1;
             this.cbbKhoaHoc.Name = "cbbKhoaHoc";
             this.cbbKhoaHoc.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -538,7 +539,7 @@
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDSHocVienTungLop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh sách học viên";

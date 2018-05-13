@@ -98,6 +98,7 @@ namespace QLTTTA.GUI
       }
       private void btnLammoiMH_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
       {
+            loadData();
       }
 
       private void frmDSMonhoc_Load(object sender, EventArgs e)

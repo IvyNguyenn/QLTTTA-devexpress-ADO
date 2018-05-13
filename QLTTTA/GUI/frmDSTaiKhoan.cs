@@ -39,8 +39,21 @@ namespace QLTTTA.GUI
       }
       private void btnXoaTK_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
       {
-         MessageBox.Show("hello");
-      }
+            string mail = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Mail").ToString();
+            if (XtraMessageBox.Show(string.Format("Bạn có muốn xóa tài khoản {0} ?", TaiKhoanBUS.Instance.getTaiKhoan(mail).ToString()), "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                bool check = TaiKhoanBUS.Instance.xoaTaiKhoan(mail);
+                if (check)
+                {
+                    XtraMessageBox.Show("Xóa tài khoản thành công", "OK");
+                }
+                else
+                {
+                    XtraMessageBox.Show("Có lỗi xảy ra", "Error");
+                }
+            }
+            loadData();
+        }
       private void btnSuaTK_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
       {
          them = false;
@@ -96,6 +109,7 @@ namespace QLTTTA.GUI
       }
       private void btnLammoiTK_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
       {
+            loadData();
       }
 
       private void gridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)

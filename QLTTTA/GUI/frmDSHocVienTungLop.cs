@@ -32,6 +32,7 @@ namespace QLTTTA.GUI
       {
          KhoaHoc khoaHoc = listKhoaHoc[cbbKhoaHoc.SelectedIndex];
          listLopHoc = LopHocBUS.Instance.getListLopHocByMaKH_MaGV(khoaHoc.MaKH, frmMain.giangVien.MaGV);
+         cbbLopHoc.Properties.Items.Clear();
          cbbLopHoc.Properties.Items.AddRange(listLopHoc);
       }
       private void cbbLopHoc_SelectedIndexChanged(object sender, EventArgs e)
@@ -51,5 +52,11 @@ namespace QLTTTA.GUI
          edtSoDT.Text = hocVien.SoDienThoai;
          edtGioiTinh.Text = hocVien.GioiTinh;
       }
-   }
+
+        private void btnLammoiHV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            listKhoaHoc = KhoaHocBUS.Instance.getListKhoaHocByMaGV(frmMain.giangVien.MaGV);
+            cbbKhoaHoc.Properties.Items.AddRange(listKhoaHoc);
+        }
+    }
 }

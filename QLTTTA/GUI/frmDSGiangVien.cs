@@ -17,6 +17,7 @@ namespace QLTTTA.GUI
     {
         List<GiangVien> listGiangVien;
         List<TaiKhoan> listTaiKhoanGV;
+        List<TaiKhoan> listTaiKhoanGVChuaDK;
         bool them = false;
         public frmDSGiangVien()
         {
@@ -128,13 +129,12 @@ namespace QLTTTA.GUI
         }
         private void btnLammoiGV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            loadData();
         }
 
         private void frmDSGiangVien_Load(object sender, EventArgs e)
         {
             loadData();
-            listTaiKhoanGV = TaiKhoanBUS.Instance.getListTaiKhoanGVChuaDK();
-            cbbMail.Properties.Items.AddRange(listTaiKhoanGV);
         }
 
         private void gridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
@@ -160,6 +160,9 @@ namespace QLTTTA.GUI
         {
             listGiangVien = GiangVienBUS.Instance.getLisGiangVien();
             gcGiangVien.DataSource = listGiangVien;
+            listTaiKhoanGV = TaiKhoanBUS.Instance.getListTaiKhoanGVChuaDK();
+            cbbMail.Properties.Items.Clear();
+            cbbMail.Properties.Items.AddRange(listTaiKhoanGV);
         }
     }
 }

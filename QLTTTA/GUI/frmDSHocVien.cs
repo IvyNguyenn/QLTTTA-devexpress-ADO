@@ -118,7 +118,7 @@ namespace QLTTTA.GUI
       }
       private void btnLammoiHV_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
       {
-         MessageBox.Show("hello");
+            loadData();
       }
       private void cbbKhoaHoc_SelectedIndexChanged(object sender, EventArgs e)
       {
